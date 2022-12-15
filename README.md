@@ -1,2 +1,6 @@
 # website
 Mi Sitio Web
+
+SITIO DE ALOJAMIENTO DE IMAGENES : IMGUR
+USUARIO: rodrigopaz98
+CLAVE: edi12S13jo$02N15
