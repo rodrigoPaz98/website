@@ -1,0 +1,715 @@
+/*
+	@media (min-width: 576px)	@media (min-width: 768px)	@media (min-width: 992px)	@media (min-width: 1200px)	@media (min-width: 1400px)
+	font: [ <font-style> || <font-variant> || <font-weight> ]? <font-size> [ / <line-height> ]? <font-family>
+*/
+
+
+/*----------------------------- RESETEO CSS -----------------------------*/
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html, body{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+body{ background: #000; }
+
+
+
+/*----------------------------- FUENTES -----------------------------*/
+@font-face {
+	font-family: 'Insaniburger';
+	src: url('../fonts/Insaniburger/Insanibc.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CaveatBrush-Regular';
+	src: url('../fonts/Caveat_Brush/CaveatBrush-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+/*----------------------------- ESTILOS PARA BOTONES -----------------------------*/
+.button-header button,
+.button-info button,
+.button-form button{
+	font-family: Insaniburger, serif;
+	letter-spacing: 0.5px;
+	background: none;
+	color: #fff;
+	padding: 10px 7px;
+	border-radius: 8px;
+	border: 3px solid #fff;
+	cursor: pointer;
+	text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.9);
+	transition: .2s;
+}
+
+.button-header button:hover,
+.button-header button:active,
+.button-info button:hover,
+.button-info button:active,
+.button-form button:hover,
+.button-form button:active{
+	border-color: #f8ab05;
+}
+
+
+
+/*----------------------------- ESTILOS PARA TÍTULOS [ PROJECTOS - ESCRÍBIME ] -----------------------------*/
+.title-projects,
+.title-form{
+	position: relative;
+	margin-top: 100px;
+}
+
+.title-projects h3,
+.title-form h3{
+	color: #fff;
+	font-family: Insaniburger, serif;
+	letter-spacing: 0.8px;
+	font-size: 2em;
+	line-height: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+
+
+/*----------------------------- ESTILOS PARA HEADER -----------------------------*/
+.header{
+	width: 100%;
+	height: 100%;
+	min-height: 665px;
+	background: url(../image/fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: 200% 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.header h1{
+	font-family: Insaniburger, serif;
+	letter-spacing: 3px;
+	color: #fff;
+	font-size: 4em;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 11%;
+	text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.9);
+}
+
+.button-header{
+	display: none;
+	position: absolute;
+	top: calc(15% + 180px);
+	left: 13%;
+}
+
+.button-header button{
+	font-size: 1.5em;
+}
+
+.header img{
+	position: absolute;
+	display: block;
+	bottom: -10px;
+	left: 15%;
+	width: 70%;
+}
+
+
+
+/*----------------------------- ESTILOS PARA INFO -----------------------------*/
+.info{
+	padding: 60px 50px 40px 50px;
+	display: flex;
+	flex-direction: row;
+}
+
+.img-info{
+	display: none;
+	margin-right: 10%;
+	position: relative;
+	border: 5px solid #f8ab05;
+	height: fit-content;
+}
+
+.borderA-img-info{
+	position: absolute;
+	width: 30%;
+	height: 10px;
+	background: #000;
+	right: -6px;
+	top: -6px;
+}
+
+.borderB-img-info{
+	position: absolute;
+	width: 10px;
+	height: 65%;
+	background: #000;
+	right: -6px;
+	top: -6px;
+}
+
+.borderC-img-info{
+	position: absolute;
+	width: 30%;
+	height: 10px;
+	background: #000;
+	left: -6px;
+	bottom: -6px;
+}
+
+.borderD-img-info{
+	position: absolute;
+	width: 10px;
+	height: 65%;
+	background: #000;
+	left: -6px;
+	bottom: -6px;
+}
+
+.content-info{
+	margin: auto;
+}
+
+.content-info > div:first-child{
+	padding: 20px 13px 16px 13px;
+	border: 5px solid #f8ab05;
+	position: relative;
+}
+
+.borderA-content-info{
+	position: absolute;
+	width: 40%;
+	height: 10px;
+	background: #000;
+	right: -6px;
+	top: -6px;
+}
+
+.borderB-content-info{
+	position: absolute;
+	width: 10px;
+	height: 50%;
+	background: #000;
+	right: -6px;
+	top: -6px;
+}
+
+.borderC-content-info{
+	position: absolute;
+	width: 40%;
+	height: 10px;
+	background: #000;
+	left: -6px;
+	bottom: -6px;
+}
+
+.borderD-content-info{
+	position: absolute;
+	width: 10px;
+	height: 50%;
+	background: #000;
+	left: -6px;
+	bottom: -6px;
+}
+
+.content-info p{
+	color: #fff;
+	text-align: justify;
+	font-family: 'Helvetica', sans-serif;
+	max-width: 610px;
+}
+
+.button-info{
+	width: 100%;
+}
+
+.button-info button{
+	display: block;
+	margin: 50px auto;
+	font-size: 1.2em;
+}
+
+
+
+/*----------------------------- ESTILOS PARA PROJECTOS -----------------------------*/
+.projects{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 75px;
+}
+
+.card{
+	font-family: Insaniburger, serif;
+	margin: 35px auto;
+	width: 250px;
+	position: relative;
+	float: left;
+	display: flex;
+	min-height: 300px;
+	transition: border .5s;
+}
+
+.title-card{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 23px;
+	font-weight: normal;
+	text-align: center;
+  	backface-visibility: hidden;
+  	letter-spacing: 1.5px;
+  	transition: transform .5s;
+  	text-shadow: -0.08em 0.03em 0.12em #000;
+  	background: linear-gradient(43deg, #4158D0 0%, #c850c0 46%, #ffcc70 100%);
+}
+
+.content-card{
+	position: absolute;
+	width: 0px;
+	height: calc(100% - 20px);
+	background: transparent;
+	backdrop-filter: blur(5px);
+	background: rgba(0,0,0, 0.4);
+	color: #fff;
+	transition: ease 1s;
+	opacity: 0;
+	right: 0;
+	padding: 10px;
+	text-align: justify;
+	font-size: 1em;
+	overflow-y: scroll;
+	border-radius: 7px;
+	box-shadow: 0 0 10px #fff;
+	line-height: 22px;
+}
+
+.content-card p{
+	transition: ease 2.5s;
+	opacity: 0;
+}
+
+.link-content-card{
+	text-decoration: none;
+	color: #fff;
+	padding: 7px 10px;
+	border-radius: 7px;
+	border: 2px solid #f8ab05;
+	background: #f8ab05;
+	font-size: .9em;
+	display: block;
+	width: fit-content;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	cursor: pointer;
+	transition: ease .3s;
+	text-shadow: -0.08em 0.03em 0.12em #000;
+}
+
+.link-content-card:hover{
+	background: #dc8629;
+	border-color: #dc8629;
+}
+
+.title-card::before,
+.title-card::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.title-card::before{
+	border-style: solid;
+	border-width: 0 0 50px 50px;
+	border-color: transparent transparent #fff transparent;
+	transition: border .25s;
+}
+
+.title-card::after{
+	content: 'Más';
+	bottom: 15px;
+	right: 14px;
+	color: #151515;
+	font-size: 21px;
+	opacity: 0;
+	text-shadow: -0.08em 0.03em 0.12em #d8d4d4;
+}
+
+.title-card:hover::before{
+	border-width: 0 0 100px 100px;
+}
+
+.title-card:hover::after{
+	opacity: 1;
+	transition: opacity .5s;
+}
+
+.title-card:focus{
+	transform: scale(.8,.8);
+}
+
+.title-card:focus + .content-card{
+	width: calc(100% - 20px);
+	opacity: 1;
+	right: 0;
+}
+
+.title-card:focus + .content-card p{
+	opacity: 1;
+}
+
+.content-card::-webkit-scrollbar{
+	width: 10px;
+}
+
+.content-card::-webkit-scrollbar-track{
+	background: #f1f1f1;
+	border-radius: 7px;
+}
+
+.content-card::-webkit-scrollbar-thumb{
+	background: #c1c1c1;
+	border-radius: 7px;
+	margin: 10px;
+}
+
+.content-card::-webkit-scrollbar-thumb:hover{
+	background: #a29f9f;
+}
+
+
+
+/*----------------------------- ESTILOS PARA FORMULARIO -----------------------------*/
+.form{
+	background: linear-gradient(153deg, #8307a7 0%, #34103e 46%, #000 100%);
+	margin-top: 100px;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+.title-form{
+	margin-top: 0;
+	padding-top: 50px;
+}
+
+.info-form p{
+	display: block;
+	color: #fff;
+	text-align: justify;
+	font-family: 'Helvetica', sans-serif;
+	max-width: 610px;
+	font-size: 1em;
+	padding: 10px;
+	margin: 40px auto 30px auto;
+}
+
+.form form{
+	padding: 50px 10px;
+	margin: auto;
+}
+
+form div{
+	margin: 10px auto 60px auto;
+	position: relative;
+}
+
+form label{
+	font-family: Insaniburger, serif;
+	text-shadow: -0.08em 0.03em 0.12em #000;
+	color: #fff;
+	letter-spacing: .8px;
+	width: 100%;
+	margin: auto;
+	font-size: 1.2em;
+	display: block;
+	position: absolute;
+	top: -10px;
+	left: 0;
+	transform: translate(10px, 10px);
+	transform-origin: left;
+	transition: transform .25s;
+}
+
+form input,
+form textarea{
+	width: 100%;
+	margin-top: 10px;
+	text-shadow: -0.08em 0.03em 0.12em #000;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: bold;
+	font-size: 1em;
+	color: #fff;
+	background: transparent;
+	outline: none;
+	border-style: none;
+	border-bottom:3px solid #f8ab05;
+	transition: ease .5s;
+}
+
+form textarea{
+	height: 150px;
+	resize: none;
+}
+
+form textarea::-webkit-scrollbar{
+	width: 0;
+}
+
+
+
+
+input:focus + label,
+textarea:focus + label{
+	transform: translate(0, -20px) scale(.8);
+}
+
+
+input:required:valid + label,
+textarea:required:valid + label{
+	transform: translate(0, -20px) scale(.8);
+	color: #d1c5fc;
+}
+
+
+
+
+.button-form button{
+	padding: 8px 20px;
+	font-size: 1.1em;
+	font-family: Insaniburger, serif;
+	text-shadow: -0.08em 0.03em 0.12em #000;
+}
+
+
+
+/*----------------------------- REDES SOCIALES -----------------------------*/
+.wrapper{
+	display: inline-flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.wrapper .icon{
+	position: relative;
+	background-color: #fff;
+	border-radius: 50%;
+	padding: 15px;
+	margin: 10px;
+	width: 10px;
+	height: 10px;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip{
+	position: absolute;
+	top: 0;
+	font-size: 14px;
+	background-color: #fff;
+	color: fff;
+	padding: 5px 8px;
+	border-radius: 5px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before{
+	position: absolute;
+	content: '';
+	height: 8px;
+	width: 8px;
+	background-color: #fff;
+	bottom: -3px;
+	left: 50%;
+	transform: translate(-50%) rotate(45deg);
+	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip{
+	top: -45px;
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip{
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before{
+	background-color: #3b5999;
+	color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip{
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	color: #fff;
+}
+
+.wrapper .instagram:hover .tooltip::before{
+	background: radial-gradient(circle at 30% 107%, #fdc680 45%, #fd8e64 80%);
+}
+
+.wrapper .whatsapp:hover,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapp:hover .tooltip::before{
+	background-color: #25d366;
+	color: #fff;
+}
+
+
+
+/*----------------------------- @MEDIA QUERIES -----------------------------*/
+@media (min-width: 476px){
+
+	/*** TITULOS ***/
+	.title-projects h3:before,
+	.title-form h3:before{
+		content: '- - - - - -';
+		margin-right: 25px;
+		font-family: 'CaveatBrush-Regular', sans-serif;
+	}
+
+	.title-projects h3:after,
+	.title-form h3:after{
+		content: '- - - - - -';
+		margin-left: 25px;
+		font-family: 'CaveatBrush-Regular', sans-serif;
+	}
+
+	/*** FORM ***/
+	.form form{
+		width: 80%;
+	}
+}
+
+@media (min-width: 576px){
+
+	/*** HEADER ***/
+	.header{
+		background: url(../image/fondo.jpg);
+		background-repeat: no-repeat;
+		background-size: 150% 100%;
+	}
+}
+
+@media (min-width: 768px){
+	
+	/*** HEADER ***/
+	.header{
+		background: url(../image/fondo.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	.header h1{
+		text-align: left;
+		top: 15%;
+		left: 11%;
+	}
+
+	.button-header{
+		display: block;
+	}
+
+	.header img{
+		left: 50%;
+		width: 40%;
+	}
+
+	/*** INFO ***/
+	.img-info{
+		display: block;
+	}
+
+	.content-info > div:first-child{
+		border: none;
+	}
+
+	/*** FORM ***/
+	.info-form p{
+		font-size: 1.1em;
+		max-width: 710px;
+	}
+
+	.form form{
+		width: 100%;
+		max-width: 710px;
+	}
+
+	form div{ 
+		width: 60%;
+		margin-left: 0;
+	}
+}
+
+@media (min-width: 992px){
+	
+	/*** HEADER ***/
+	.header img{
+		left: 55%;
+	}
+
+	/*** INFO ***/
+	.img-info{
+		margin-left: 6.5%;
+	}
+
+	/*** TITULOS ***/
+	.title-projects h3:before{
+		content: '- - - - - - - - -';
+	}
+
+	.title-projects h3:after{
+		content: '- - - - - - - - -';
+	}
+
+	/*** FORM ***/
+	.info-form p{
+		max-width: 900px;
+	}
+
+	.form form{
+		max-width: 900px;
+	}
+}
+
+@media (min-width: 1200px){
+	
+	/*** HEADER ***/
+	.header img{
+		left: 49%;
+		width: 50%;
+	}
+}
+
