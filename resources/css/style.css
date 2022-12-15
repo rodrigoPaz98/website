@@ -617,7 +617,7 @@ textarea:required:valid + label{
 
 	/*** HEADER ***/
 	.header{
-		background: url(../image/fondo.jpg);
+		background: url(https://drive.google.com/file/d/10fOUDjmdUlld13pBazG_es7NUzP_-OkK/view?usp=share_link.jpg);
 		background-repeat: no-repeat;
 		background-size: 150% 100%;
 	}
@@ -627,7 +627,7 @@ textarea:required:valid + label{
 	
 	/*** HEADER ***/
 	.header{
-		background: url(../image/fondo.jpg);
+		background: url(https://drive.google.com/file/d/10fOUDjmdUlld13pBazG_es7NUzP_-OkK/view?usp=share_link);
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 	}
