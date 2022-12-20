@@ -452,8 +452,8 @@ body{ background: #000; }
 	display: block;
 	color: #fff;
 	text-align: justify;
-	font-family: CaveatBrush-Regular, serif;		/* PARA DESARROLLO */
-	/*font-family: 'Caveat Brush', cursive;*/		/* PARA PRODUCCIÓN */
+	/*font-family: CaveatBrush-Regular, serif;*/		/* PARA DESARROLLO */
+	font-family: 'Caveat Brush', cursive;			/* PARA PRODUCCIÓN */
 	max-width: 610px;
 	font-size: 2em;
 	padding: 10px 20px;
