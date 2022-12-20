@@ -1,16 +1,27 @@
-
-
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="resources/image/avatar.png">
+				
+		<!-- PARA DESARROLLO -->
+		<!--
+			<link rel="icon" href="resources/image/avatar.png">
+			<link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+			<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+			<script type="text/javascript" src="resources/js/jquery-3.6.0.js"></script>
+			<script type="text/javascript" src="resources/js/script.js"></script>
+		-->
+		
+		<!-- PARA PRODUCCIÓN -->
+		<link rel="icon" href="https://i.imgur.com/Bgy4glr.png">
 		<link rel="stylesheet" type="text/css" href="resources/css/style.css" />
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 		<link href="//db.onlinewebfonts.com/c/4124a6204d35abaf22db32c19d62d73e?family=Insaniburger" rel="stylesheet" type="text/css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script type="text/javascript" src="resources/js/script.js"></script>
+		
 		<title>Rodrigo Paz - Portfolio Web</title>
 	</head>
 	<body>
@@ -21,10 +32,11 @@
 
 			<!-- BOTÓN OCULTO EN DISPOSITIVOS PEQUEÑOS -->
 			<div class="button-header">
-				<button>DESCARGAR PORTFOLIO</button>
+				<button><a href="mantto.html">DESCARGAR PORTFOLIO</a></button>
 			</div>
 
-			<img src="https://i.imgur.com/Bgy4glr.png">
+			<!--<img src="resources/image/avatar.png">-->			<!-- PARA DESARROLLO -->
+			<img src="https://i.imgur.com/Bgy4glr.png">			<!-- PARA PRODUCCIÓN -->
 		</div>
 
 
@@ -37,7 +49,8 @@
 				<div class="borderB-img-info"></div>
 				<div class="borderC-img-info"></div>
 				<div class="borderD-img-info"></div>
-				<img src="https://i.imgur.com/Bgy4glr.png">
+				<!--<img src="resources/image/avatar.png">-->			<!-- PARA DESARROLLO -->
+				<img src="https://i.imgur.com/Bgy4glr.png">			<!-- PARA PRODUCCIÓN -->
 			</div>
 			
 			<div class="content-info">
@@ -48,12 +61,12 @@
 					<div class="borderC-content-info"></div>
 					<div class="borderD-content-info"></div>
 
-					<p>Soy un freelancer salvadoreño dedicado al diseño y desarrollo de soluciones tecnológicas ofreciendo mis servicios para todo tipo de proyectos, desde sitios web o blogs personales hasta proyectos empresariales en colaboraci&oacute;n con diferentes personas. A continuaci&oacute;n te muestro algunos proyectos realizados. Te invito a descargar mi <strong>Portfolio Web</strong> para saber m&aacute;s acerca de m&iacute;.</p>
+					<p>Soy un freelancer salvadore&ntilde;o dedicado a la creaci&oacute;n de soluciones tecnol&oacute;gicas ofreciendo mis servicios de consultor&iacute;a, dise&ntilde;o y desarrollo de sitios y aplicaciones webs 100% personalizados seg&uacute;n la necesidad del cliente. A continuaci&oacute;n te muestro algunos proyectos realizados. Te invito a descargar mi <strong><a href="mantto.html">Portfolio Web</a></strong> para saber m&aacute;s acerca de m&iacute;.</p>
 				</div>
 
 
 				<div class="button-info">
-					<button>DESCARGAR PORTFOLIO</button>
+					<button><a href="mantto.html">DESCARGAR PORTFOLIO</a></button>
 				</div>
 			</div>
 
@@ -70,14 +83,14 @@
 			<article class="card">
 				<h5 class="title-card" tabindex="0">Calculadora</h5>
 				<div class="content-card">
-					<p>Categor&iacute;a: FRONT-END</p>
+					<p>Una peque&ntilde;a aplicaci&oacute;n de una calculadora con las funciones b&aacute;sicas (suma, resta, multiplicaci&oacute;n, divisi&oacute;n) </p>
 
 					<a href="#" class="link-content-card">Ver M&aacute;s</a>
 				</div>
 			</article>
 
 			<article class="card">
-				<h5 class="title-card" tabindex="0">DEMO</h5>
+				<h5 class="title-card" tabindex="0">DEMO<br>(inactivo)</h5>
 				<div class="content-card">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -90,7 +103,7 @@
 			</article>
 
 			<article class="card">
-				<h5 class="title-card" tabindex="0">DEMO</h5>
+				<h5 class="title-card" tabindex="0">DEMO<br>(inactivo)</h5>
 				<div class="content-card">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -103,7 +116,7 @@
 			</article>
 
 			<article class="card">
-				<h5 class="title-card" tabindex="0">DEMO</h5>
+				<h5 class="title-card" tabindex="0">DEMO<br>(inactivo)</h5>
 				<div class="content-card">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -142,7 +155,7 @@
 					<textarea name="textMensaje" id="textMensaje" required></textarea>
 					<label for="textMensaje">MENSAJE</label>
 				</div>
-				<div class="button-form"><button>Enviar</button></div>
+				<div class="button-form"><button><a href="mantto.html">Enviar</a></button></div>
 			</form>
 
 
