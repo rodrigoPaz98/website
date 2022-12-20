@@ -287,14 +287,16 @@ body{ background: #000; }
 	padding-top: 75px;
 }
 
-.card{
+card{
 	font-family: Insaniburger, serif;
-	margin: 35px auto;
-	width: 250px;
+	margin: 10px auto;
+	width: 100%;
+	max-width: 300px;
 	position: relative;
 	float: left;
 	display: flex;
 	min-height: 300px;
+	height: 400px;
 	transition: border .5s;
 }
 
