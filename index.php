@@ -61,7 +61,7 @@
 					<div class="borderC-content-info"></div>
 					<div class="borderD-content-info"></div>
 
-					<p>Soy un freelancer salvadore&ntilde;o dedicado a la creaci&oacute;n de soluciones tecnol&oacute;gicas ofreciendo mis servicios de consultor&iacute;a, dise&ntilde;o y desarrollo de sitios y aplicaciones webs 100% personalizados seg&uacute;n la necesidad del cliente. A continuaci&oacute;n te muestro algunos proyectos realizados. Te invito a descargar mi <strong><a href="mantto.html">Portfolio Web</a></strong> para saber m&aacute;s acerca de m&iacute;.</p>
+					<p>Soy un profesional dedicado a la creaci&oacute;n de soluciones tecnol&oacute;gicas ofreciendo mis servicios de consultor&iacute;a, dise&ntilde;o y desarrollo de sitios y aplicaciones webs 100% personalizados seg&uacute;n la necesidad del cliente. A continuaci&oacute;n te muestro algunos proyectos realizados. Te invito a descargar mi <strong><a href="mantto.html">Portfolio Web</a></strong> para saber m&aacute;s acerca de m&iacute;.</p>
 				</div>
 
 
